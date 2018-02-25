@@ -1,15 +1,30 @@
 <div>
 
-  <div class="row">
-    <div class="col">
-      <img [src]="mypict" class="profpict">
+    <div class="row cvbanner">
+        <div class="col">
+            <img [src]="mypict" class="profpict" (click)="golinkedin()">
+        </div>
+        <div class="col">
+            <h1>PIRAU Jonathan</h1>
+            <h2>FullStack Developer</h2>
+            <h2>IT Consultant</h2>
+        </div>
     </div>
-    <div class="col">
-      <h1>PIRAU Jonathan</h1>
-      <h2>FullStack Developer</h2>
-      <h2>IT Consultant</h2>
+    <div class="disclaimer">
+        <h1>Professional experience and education</h1>
     </div>
-  </div>
-
-
+    <div class="row workbanner">
+        <div class="col">
+            <img [src]="arhspict" class="workpict">
+            <p>IT Consultant for Arhs Cube</p>
+        </div>
+        <div class="col">
+            <img [src]="unifrpict" class="workpict">
+            <p>Research Intern at UniFr</p>
+        </div>
+        <div class="col">
+            <img [src]="unamurpict" class="workpict">
+            <p>Student at Unamur</p>
+        </div>
+    </div>
 </div>

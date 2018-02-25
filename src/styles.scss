@@ -22,13 +22,16 @@ a {
   text-decoration:none;
 }
 
+a:hover{
+  background-color: rgba(255,255,255,.2);
+  border-radius: .1875rem;
+  padding: 0.5em;
+}
+
 .headers-banner{
   border: double black;
   vertical-align:middle;
   background-color: #283e4a;
+
 }
 
-.profpict{
-  width:300px;
-  margin-top: 1em;
-}
