@@ -10,7 +10,7 @@ export class CvComponent implements OnInit {
   mypict: string;
 
   constructor() {
-    this.mypict='/assets/pictures/meDessin.jpg';
+    this.mypict='assets/pictures/meDessin.jpg';
   }
 
   ngOnInit() {

@@ -2,3 +2,11 @@
   padding: .4em 1.3em;
 
 }
+.row{
+  display: grid;
+  grid-template-columns: 25% auto;
+  background-image: url("assets/pictures/banner.jpg");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
