@@ -44,10 +44,48 @@
 }
 
 .workpict{
-  width: 200px;
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
+  transition: all .2s ease-in-out;
+}
+.workpict:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
+.skillpict{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  transition: all .2s ease-in-out;
+}
+.skillpict:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+}
+
+.underlinetext{
+  text-align: center;
+  font-size: 24px;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 1;
+  bottom: 125%;
+}
+
+.toocontainer{
+  height: 50px;
 }

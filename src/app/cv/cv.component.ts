@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Img} from './img';
+import {SkillsService} from './skills.service';
 
 @Component({
   selector: 'app-cv',
@@ -11,19 +13,42 @@ export class CvComponent implements OnInit {
   arhspict: string;
   unifrpict: string;
   unamurpict: string;
+  descr:string;
+  Imgs = [];
+  img1:Img;
+  show=false;
 
-  constructor() {
+  constructor( private  skillservice : SkillsService) {
     this.mypict='assets/pictures/meDessin.jpg';
     this.arhspict='assets/pictures/arhs-cube.png';
     this.unifrpict='assets/pictures/unifr.png';
     this.unamurpict='assets/pictures/unamur.png';
+    this.skillservice.getJSON().subscribe(data => {
+      this.Imgs=data.data
+    });
   }
 
   ngOnInit() {
   }
 
-  golinkedin() {
-    window.open('https://www.linkedin.com/in/jonathan-pirau-918631114/',"_blank");
+  navigate(url : string) {
+    window.open(url,"_blank");
   }
 
+  ngAfterContentInit() {
+  }
+
+  ngOnDestroy() {
+  }
+
+  mouseEnter(div : string){
+    this.show=true;
+    this.descr=div;
+    //this.Imgs.push("hover");
+  }
+
+  mouseLeave(div : string){
+    this.show=false;
+    //this.Imgs.push("out");
+  }
 }
