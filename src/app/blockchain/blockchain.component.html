@@ -1,0 +1,12 @@
+<h1>Blockchain Demo</h1>
+<h2>First the hash function :</h2>
+<div class="shagrid">
+  <form class="btntextgrid">
+    <input type="text" class="txt" name="item" placeholder="Text to hash ..."[(ngModel)]="tohash">
+    <input type="submit" class="btn" [value]="btnText" (click)="fcthash()">
+  </form>
+  <div>{{tohash}}</div>
+  <div>{{hashdemo}}</div>
+</div>
+
+<h2>Second the blockchain :</h2>

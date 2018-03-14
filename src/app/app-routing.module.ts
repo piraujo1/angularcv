@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CvComponent } from './cv/cv.component';
 import { ArhsComponent } from './arhs/arhs.component';
+import {SandboxComponent} from "./sandbox/sandbox.component";
 
 const routes: Routes = [
   {
@@ -10,6 +11,9 @@ const routes: Routes = [
   },{
     path:'arhs',
     component: ArhsComponent
+  },{
+    path:'sandbox',
+    component: SandboxComponent
   },
 
 ];

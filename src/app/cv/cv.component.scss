@@ -74,6 +74,11 @@
   grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
 }
 
+.skillgrid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
 .underlinetext{
   text-align: center;
   font-size: 24px;
@@ -88,4 +93,13 @@
 
 .toocontainer{
   height: 50px;
+}
+
+.skillslty {
+  background:#3FA0E1;
+  padding:.5em;
+  font-weight:bold;
+  margin: 1em;
+  text-align: center;
+  border-radius: 10px;
 }

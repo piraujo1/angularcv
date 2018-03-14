@@ -15,8 +15,10 @@ export class CvComponent implements OnInit {
   unamurpict: string;
   descr:string;
   Imgs = [];
-  img1:Img;
   show=false;
+  secondSkill=["Scala", "IONIC Framework", "Electron Framework", "Agile Methodology (Scrum-Kanban)", "Latex", "JSON", "XML", "PHP"];
+
+
 
   constructor( private  skillservice : SkillsService) {
     this.mypict='assets/pictures/meDessin.jpg';

@@ -2,7 +2,8 @@
 
     <div class="row cvbanner">
         <div class="col">
-            <img [src]="mypict" class="profpict" (click)="navigate('https://www.linkedin.com/in/jonathan-pirau-918631114/')">
+            <img [src]="mypict" class="profpict"
+                 (click)="navigate('https://www.linkedin.com/in/jonathan-pirau-918631114/')">
         </div>
         <div class="col">
             <h1>PIRAU Jonathan</h1>
@@ -35,10 +36,17 @@
 <div class="toocontainer">
     <div *ngIf="show" class="underlinetext">{{descr}}</div>
 </div>
-<div  class="grid">
+<div class="grid">
     <div *ngFor="let tes of Imgs" class="gridcase">
-        <img src="{{tes.url}}" class="skillpict" (mouseenter) ="mouseEnter(tes.name) "  (mouseleave) ="mouseLeave('div A') " (click)="navigate(tes.key)">
+        <img src="{{tes.url}}" class="skillpict" (mouseenter)="mouseEnter(tes.name) "
+             (mouseleave)="mouseLeave('div A') " (click)="navigate(tes.key)">
     </div>
 </div>
 
-<h1>Also provident with:</h1>
+<h1>Others useful skills, technologies and frameworks:</h1>
+<div class="skillgrid">
+    <div *ngFor="let skill of secondSkill">
+        <div class="skillslty">{{skill}}</div>
+    </div>
+
+</div>
